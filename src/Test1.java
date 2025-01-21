@@ -42,7 +42,6 @@ public class Test1 {
 
 		Set<String> windows = driver.getWindowHandles();
 		Iterator<String> it = windows.iterator();
-		String parentWindow = it.next();
 		
 		while(it.hasNext()) {
 			String childWindow = it.next();
@@ -54,7 +53,7 @@ public class Test1 {
 		}
 		
 
-		driver.close();
+		driver.quit();
 	}
 
 }
