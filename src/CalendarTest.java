@@ -27,7 +27,7 @@ public class CalendarTest {
 		driver.findElement(By.xpath("//div[@class='react-calendar__viewContainer']//button[" + (day + 1) + "]"))
 				.click();
 
-		// Now get Test text of calendar
+		// Now get Test text of Calendar
 
 		List<WebElement> ActualList = driver.findElements(By.cssSelector(".react-date-picker__inputGroup__input"));
 		
